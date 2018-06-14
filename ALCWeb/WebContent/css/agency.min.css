@@ -179,7 +179,7 @@ header.masthead {
 	background-image: url(../img/ALC.jpg);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-position: center center;
+	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -210,8 +210,8 @@ header.masthead .intro-text .intro-heading {
 
 @media ( min-width :768px) {
 	header.masthead .intro-text {
-		padding-top: 300px;
-		padding-bottom: 200px
+		padding-top: 430px;
+		padding-bottom: 230px
 	}
 	header.masthead .intro-text .intro-lead-in {
 		font-size: 40px;
