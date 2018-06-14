@@ -1,0 +1,211 @@
+@CHARSET "UTF-8";
+
+.timeline>li .timeline-image {
+	color: #fff;
+	text-align: center;
+}
+
+.timeline .timeline-heading h4 {
+	margin-top: 0;
+	color: inherit;
+}
+
+body {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+	float: right;
+	text-align: left;
+	padding: 0 30px 20px 20px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+	float: right;
+	text-align: left;
+	padding: 0 20px 0 100px;
+}
+
+.timeline>li .timeline-panel {
+	padding: 0 20px 20px 100px;
+}
+
+.timeline>li .timeline-panel {
+	padding: 0 20px 20px;
+}
+
+.timeline>li .timeline-panel {
+	width: 41%;
+	float: left;
+	padding: 0 20px 20px 30px;
+	text-align: right;
+}
+
+.timeline>li .timeline-panel {
+	width: 100%;
+	float: right;
+	padding: 0 20px 0 100px;
+	position: relative;
+	text-align: left;
+}
+
+.timeline>li .timeline-image {
+	width: 100px;
+	height: 100px;
+	left: 50%;
+	margin-left: -50px;
+}
+
+.timeline>li .timeline-image {
+	left: 0;
+	margin-left: 0;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	z-index: 100;
+	background-color: #fed136;
+	color: #fff;
+	border-radius: 100%;
+	border: 7px solid #f1f1f1;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+@media ( min-width : 1200px) agency.css:554 .timeline>li .timeline-panel
+	{
+	padding
+	
+	
+	
+	
+	
+	
+	
+	
+	:
+	
+	
+	
+	
+	 
+	
+	
+	
+	
+	0
+	20
+	px
+	
+	
+	
+	
+	 
+	
+	
+	
+	
+	20
+	px
+	
+	
+	
+	
+	 
+	
+	
+	
+	
+	100
+	px
+	
+	
+	
+	
+	
+	
+	
+	
+	;
+}
+
+.timeline>li .timeline-image {
+	color: #fff;
+	text-align: center;
+}
+/* 
+.timeline>li .timeline-image {
+	width: 170px;
+	height: 170px;
+	margin-left: -85px;
+
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus
+	{
+	color: #fff;
+	background-color: #fec503
+}
+} */
+
+.timeline .timeline-heading h4.subheading {
+	text-transform: none;
+}
+
+.timeline>li .timeline-panel {
+	padding: 0 20px 20px 100px;
+}
+
+.timeline>li .timeline-image {
+	color: #fff;
+	text-align: center;
+}
+
+.timeline .timeline-heading h4 {
+	margin-top: 0;
+	color: inherit;
+}
+
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+	padding-top: 54px;
+}
+
+@media ( min-width : 992px) {
+	body {
+		padding-top: 56px;
+	}
+}
+
+.carousel-item {
+	height: 65vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus
+	{
+	color: #fff;
+	background-color: #fec503
+}
+
+.portfolio-item {
+	margin-bottom: 30px;
+}
+
+footer {
+	padding: 25px 0;
+	text-align: center;
+	background-color: #1b5e9d;
+}
