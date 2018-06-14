@@ -176,7 +176,7 @@ body {
 header.masthead {
 	text-align: center;
 	color: #fff;
-	background-image: url(../images/ALC.jpg);
+	background-image: url(../img/ALC.jpg);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
@@ -293,6 +293,7 @@ header.masthead .intro-text .intro-heading {
 	padding: 25px;
 	text-align: center;
 	background-color: #fff
+	
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
