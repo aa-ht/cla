@@ -178,7 +178,7 @@ header.masthead {
 	color: #fff;
 	background-image: url(../img/ALC.jpg);
 	background-repeat: no-repeat;
-	background-attachment: scroll;
+	background-attachment: local;
 	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
