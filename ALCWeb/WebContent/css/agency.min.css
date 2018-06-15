@@ -119,28 +119,28 @@ body {
 }
 
 #mainNav .navbar-brand {
-	color: #fed136;
-	font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial,
+	color:#f8ad14;
+	font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial,
 		cursive
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus,
 	#mainNav .navbar-brand:hover {
-	color: #fec503
+	color: 
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-	font-size: 90%;
+	font-size: 100%;
 	font-weight: 400;
 	padding: .75em 0;
 	letter-spacing: 1px;
-	color: #e3bd44;
+	color: #f8ad14;
 	font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover
 	{
-	color: #fed136
+	color: #f8ad14;
 }
 
 @media ( min-width :992px) {
@@ -178,8 +178,8 @@ header.masthead {
 	color: #fff;
 	background-image: url(../img/ALC.jpg);
 	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position: center center;
+	background-attachment: local;
+	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -210,8 +210,8 @@ header.masthead .intro-text .intro-heading {
 
 @media ( min-width :768px) {
 	header.masthead .intro-text {
-		padding-top: 300px;
-		padding-bottom: 200px
+		padding-top: 430px;
+		padding-bottom: 230px
 	}
 	header.masthead .intro-text .intro-lead-in {
 		font-size: 40px;
