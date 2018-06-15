@@ -43,7 +43,7 @@ public class AuctionInfoServlet extends HttpServlet {
 			out.println("Done");
 		}
 		else{
-			out.println("Access Denied!!");
+			out.println("Access Denied!!"); 
 		}
 		
 		
