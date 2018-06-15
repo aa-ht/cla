@@ -36,6 +36,7 @@ public class AuctionInfoServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		PrintWriter out = response.getWriter();
 		String password = request.getParameter("pwd");
 		
