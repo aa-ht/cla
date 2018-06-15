@@ -84,7 +84,9 @@ public class MessageBean implements Serializable{
 			System.out.println("Done");
 
 		} catch (MessagingException e) {
+			
 			throw new RuntimeException(e);
+		
 		}
 	}
 

@@ -18,10 +18,13 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
 	integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
 	crossorigin="anonymous">
+
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
+
 <script async
 	src="https://www.googletagmanager.com/gtag/js?id=UA-110540592-1"></script>
+
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() {
@@ -31,7 +34,6 @@
 
 	gtag('config', 'UA-110540592-1');
 </script>
-
 
 </head>
 
@@ -160,10 +162,10 @@
 						</div>
 						<p class="help-block text text-danger"></p>
 					</div>
-					<!-- <div class="g-recaptcha"
+					<div class="g-recaptcha" id="recaptcha"
 						data-sitekey="6LfkrDsUAAAAACJkGrOHzNoz8xVziYdSvU6Ua3d4"
 						data-callback="onSuccess"></div>
- -->
+
 					<script>
 						var onSuccess = function(response) {
 							var errorDivs = document
@@ -179,7 +181,7 @@
 							}
 						};
 					</script>
-					<!-- Optional noscript fallback. -->
+
 					<noscript>
 						<div style="width: 302px; height: 462px;">
 							<div style="width: 302px; height: 422px; position: relative;">
@@ -200,6 +202,13 @@
 						<br>
 					</noscript>
 					<!-- END: ReCAPTCHA implementation example. -->
+					<script>
+					$("#recaptcha").click(function(){
+					    alert("hello");
+					    $("#sendMessageButton).show();
+					}); 
+					
+					</script>
 					<div id="success">
 						<button type="submit" class="btn btn-primary"
 							id="sendMessageButton">Send Message</button>
@@ -214,19 +223,13 @@
 	</div>
 	<!-- /.container -->
 
-	<!-- Footer -->
 	<footer>
 		<div class="container">
 			<p class="m-0 text-center text-white">Copyright &copy; HUHY
 				Technologies pvt ltd 2017</p>
 		</div>
 
-		<!-- /.container -->
-
 	</footer>
-
-
-
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 		crossorigin="anonymous"></script>
@@ -240,9 +243,9 @@
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-	<!-- Contact form JavaScript -->
 	<!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
 	<script src="js/jqBootstrapValidation.js"></script>
+
 	<script src="js/contact_me.js"></script>
 
 </body>

@@ -138,18 +138,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	text-align: center;
 }
-/* 
-.timeline>li .timeline-image {
-	width: 170px;
-	height: 170px;
-	margin-left: -85px;
-
-.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus
-	{
-	color: #fff;
-	background-color: #fec503
-}
-} */
 
 .timeline .timeline-heading h4.subheading {
 	text-transform: none;
