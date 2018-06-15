@@ -130,7 +130,7 @@ body {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-	font-size: 90%;
+	font-size: 100%;
 	font-weight: 400;
 	padding: .75em 0;
 	letter-spacing: 1px;
@@ -140,7 +140,7 @@ body {
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover
 	{
-	color: #fed136
+	color: #f8ad14;
 }
 
 @media ( min-width :992px) {
