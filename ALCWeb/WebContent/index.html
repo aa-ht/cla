@@ -360,22 +360,26 @@
 			</div>
 
 			<div class="col-lg-4 ">
-				<div class="form-group">
-					<input class="form-control" id="pwd" type="password"
-						placeholder="Password *" required
-						data-validation-required-message="Please enter your password.">
-					<p class="help-block text-danger"></p>
+				<form id="infoform">
+					<div class="form-group">
+						<input class="form-control" id="pwd" type="password"
+							placeholder="Password*" required
+							data-validation-required-message="Please enter your password.">
+						<p class="help-block text-danger"></p>
 
-				</div>
+					</div>
+
+					<div>
+						<button type="submit" id="button">Submit</button>
+					</div>
+				</form>
+				<br /> <br />
+				<div style="color: red" class="row" id="information"></div>
 			</div>
-			<div>
-				<button type="button" id="button">Submit</button>
-			</div>
-
-			<div class="row" id="information">
 
 
-				<!-- <div class="col-sm-4">
+
+			<!-- <div class="col-sm-4">
 					<div class="team-member">
 						<img class="mx-auto rounded-circle" src="img/team/fiancexpert.jpg" alt="">
 						<h4>Mahesh</h4>
