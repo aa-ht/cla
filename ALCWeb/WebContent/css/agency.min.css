@@ -14,7 +14,8 @@ p {
 }
 
 a {
-	color: #fed136
+	color:#f8ad14
+	
 }
 
 a:hover {
@@ -674,7 +675,7 @@ footer span.copyright {
 }
 
 footer ul.quicklinks {
-	font-size: 90%;
+	font-size: 100%;
 	line-height: 40px;
 	margin-bottom: 0;
 	text-transform: none;
