@@ -32,8 +32,6 @@ public class AuctionInfoServlet extends HttpServlet {
 		// TODO Auto-generated constructor stub
 	}
 
-	
-	
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
@@ -50,21 +48,28 @@ public class AuctionInfoServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		//response.setHeader("Cache-Control", "nostore");
 		PrintWriter out = response.getWriter();
 		String password = request.getParameter("pwd");
 
 		if (password != null) {
 			if (password.equals("alc41021080#")) {
-				out.println("<table><tr><td><a id=\"download\" href=\"#\">ALChits.xlsx</a></td></tr>");						
+				String AlChitsFileName = (String) getServletContext().getAttribute("ALChitsFileName");
+				if (AlChitsFileName != null) {
+					out.println("<table><tr><td><a href=\"data/" + AlChitsFileName + "\">" + AlChitsFileName + "</a>&nbsp;(Please click to download.)</td></tr><tr><td></td></tr>");
+				}
 				out.println("<tr><td><iframe src=\"https://docs.google.com/presentation/d/e/2PACX-1vQmC6JTtpkF1x_Hq60rJTDQlMZbD4PKAMAuzQKA_WJF388rCZxtupf25oj3PQPGHCqlPX1DIS-alkJO/embed?start=false&loop=true&delayms=5000\" frameborder=\"0\" width=\"960\" height=\"569\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe></td></tr></table>");
-				out.println("<script src=\"js/download.js\"></script>");
+				//out.println("<script src=\"js/download.js\"></script>");
+
 			}
-			if(password.equals("admin560110#")){
+			else if (password.equals("admin560110#")) {
 				request.getRequestDispatcher("upload34537456834.jsp").forward(request, response);
 			}
+			else {
+				 out.println("<p style=\"color:red\">Access Denied!!</p>");
+			}
 		} else {
-			//out.println("Access Denied!!");
+			 out.println("<p style=\"color:red\">Access Denied!!</p>");
 		}
 
 	}

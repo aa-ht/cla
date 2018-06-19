@@ -5,6 +5,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -21,6 +26,8 @@ import org.apache.tomcat.util.http.fileupload.FileUploadException;
 import org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory;
 import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
 import org.apache.tomcat.util.http.fileupload.servlet.ServletRequestContext;
+
+
 
 /**
  * Servlet implementation class UploadFileServlet
@@ -74,16 +81,22 @@ public class UploadFileServlet extends HttpServlet {
 			Iterator<FileItem> fileItemsIterator = fileItemsList.iterator();
 			while (fileItemsIterator.hasNext()) {
 				FileItem fileItem = fileItemsIterator.next();
-				out.println("FieldName=" + fileItem.getFieldName());
-				out.println("FileName=" + fileItem.getName());
-				out.println("ContentType=" + fileItem.getContentType());
-				out.println("Size in bytes=" + fileItem.getSize());
+				//out.println("FieldName=" + fileItem.getFieldName());
+				//out.println("FileName=" + fileItem.getName());
+				//out.println("ContentType=" + fileItem.getContentType());
+				//out.println("Size in bytes=" + fileItem.getSize());
 
 				File file = new File(
 						request.getServletContext().getAttribute("FILES_DIR") + File.separator + fileItem.getName());
 				out.println("Absolute Path at server=" + file.getAbsolutePath());
 				fileItem.write(file);
 				out.write("File " + fileItem.getName() + " uploaded successfully.");
+				
+				List<String> lines = Arrays.asList(fileItem.getName());
+				Path filePath = Paths.get(request.getServletContext().getAttribute("FILES_DIR") + File.separator +"filenames.txt");
+				Files.write(filePath, lines, Charset.forName("UTF-8"));
+		
+				getServletContext().setAttribute("ALChitsFileName",fileItem.getName() );
 				//out.write("<br>");
 				//out.write("<a href=\"UploadDownloadFileServlet?fileName=" + fileItem.getName() + "\">Download "
 				//		+ fileItem.getName() + "</a>");

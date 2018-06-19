@@ -1,4 +1,4 @@
-const saveData = (() => {
+/*const saveData = (() => {
   const a = document.createElement('a');
   a.style = 'display: none';
   document.body.appendChild(a);
@@ -17,7 +17,7 @@ const saveData = (() => {
     URL.revokeObjectURL(url);
     return true;
   };
-})();
+})();*/
 
 $("#infoform").submit(function(e) {
 	

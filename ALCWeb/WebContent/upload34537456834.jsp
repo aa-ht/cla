@@ -7,7 +7,7 @@
 <title>AlChits</title>
 </head>
 <body>
-	<form action="upld" method="post"
+	<form id="upldfrm" action="upld" method="post"
 		enctype="multipart/form-data">
 		Select File to Upload:<input type="file" name="fileName"> <br>
 		<input type="submit" value="Upload">

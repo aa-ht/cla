@@ -3,7 +3,7 @@
   <display-name>ALCWeb</display-name>
   <context-param>
     <param-name>tempfile.dir</param-name>
-    <param-value>tmpfiles</param-value>
+    <param-value>webapps/ALCWeb/data</param-value>
   </context-param>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
