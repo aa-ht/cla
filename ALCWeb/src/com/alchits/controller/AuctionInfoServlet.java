@@ -51,7 +51,7 @@ public class AuctionInfoServlet extends HttpServlet {
 				if (AlChitsFileName != null) {
 					out.println("<a href=\"data/" + AlChitsFileName + "\">" + AlChitsFileName + "</a>&nbsp;(Please click to download.)");
 				}
-				out.println("</td></tr><tr><td></td></tr><tr><td><iframe src=\"https://docs.google.com/presentation/d/e/2PACX-1vQmC6JTtpkF1x_Hq60rJTDQlMZbD4PKAMAuzQKA_WJF388rCZxtupf25oj3PQPGHCqlPX1DIS-alkJO/embed?start=false&loop=true&delayms=5000\" frameborder=\"0\" width=\"960\" height=\"569\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe></td></tr></table>");
+				out.println("</td></tr><tr><td></td></tr><tr><td><div class=\"resp-container\"><iframe class=\"resp-iframe\" src=\"https://docs.google.com/presentation/d/e/2PACX-1vQmC6JTtpkF1x_Hq60rJTDQlMZbD4PKAMAuzQKA_WJF388rCZxtupf25oj3PQPGHCqlPX1DIS-alkJO/embed?start=false&loop=true&delayms=5000\" frameborder=\"0\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe></td></tr></table>");
 				//out.println("<script src=\"js/download.js\"></script>");
 
 			}
