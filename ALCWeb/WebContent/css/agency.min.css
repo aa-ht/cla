@@ -118,7 +118,7 @@ body {
 	color: #fff;
 	
 	border: 0;
-	background-color: #000000;
+	background-color: #82bef2;
 	font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
@@ -183,6 +183,7 @@ body {
 header.masthead {
 	text-align: center;
 	color: #fff;
+	background-size: cover;
 	background-image: url(../img/ALCWebBg.png);
 	background-repeat: no-repeat;
 	background-attachment: local;
