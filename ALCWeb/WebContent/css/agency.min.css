@@ -6,7 +6,8 @@
 body {
 	overflow-x: hidden;
 	font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial,
-		sans-serif
+		sans-serif;
+	padding-top: 25px;
 }
 
 p {
@@ -14,7 +15,7 @@ p {
 }
 
 a {
-	color:#f8ad14
+	color:black;
 	
 }
 
@@ -105,7 +106,8 @@ body {
 }
 
 #mainNav {
-	background-color: #212529
+	/*background-color: #212529;*/
+	background-color: #82bef2;
 }
 
 #mainNav .navbar-toggler {
@@ -114,15 +116,17 @@ body {
 	padding: 13px;
 	text-transform: uppercase;
 	color: #fff;
+	
 	border: 0;
-	background-color: #fed136;
+	background-color: #000000;
 	font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 #mainNav .navbar-brand {
-	color:#f8ad14;
+	color:#ffff;
 	font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial,
-		cursive
+		cursive;
+		
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus,
@@ -132,29 +136,31 @@ body {
 
 #mainNav .navbar-nav .nav-item .nav-link {
 	font-size: 100%;
-	font-weight: 400;
+	font-weight:bold;
 	padding: .75em 0;
 	letter-spacing: 1px;
-	color: #f8ad14;
+	color: #ffff;
 	font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover
 	{
-	color: #f8ad14;
+	color: #000000;
 }
 
 @media ( min-width :992px) {
 	#mainNav {
-		padding-top: 25px;
-		padding-bottom: 25px;
+		/*padding-top: 25px;
+		padding-bottom: 25px;*/
 		-webkit-transition: padding-top .3s, padding-bottom .3s;
 		-moz-transition: padding-top .3s, padding-bottom .3s;
 		transition: padding-top .3s, padding-bottom .3s;
 		border: none;
-		background-color: transparent
+		/*background-color: transparent*/
+		background-color: #82bef2;
 	}
 	#mainNav .navbar-brand {
+	font-weight:bold;
 		font-size: 1.75em;
 		-webkit-transition: all .3s;
 		-moz-transition: all .3s;
@@ -166,7 +172,7 @@ body {
 	#mainNav.navbar-shrink {
 		padding-top: 0;
 		padding-bottom: 0;
-		background-color: #212529
+		background-color: #82bef2;
 	}
 	#mainNav.navbar-shrink .navbar-brand {
 		font-size: 1.25em;
@@ -177,7 +183,7 @@ body {
 header.masthead {
 	text-align: center;
 	color: #fff;
-	background-image: url(../img/ALC.jpg);
+	background-image: url(../img/ALCWebBg.png);
 	background-repeat: no-repeat;
 	background-attachment: local;
 	background-position: center;
