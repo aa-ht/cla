@@ -51,7 +51,7 @@ public class AuctionInfoServlet extends HttpServlet {
 				if (AlChitsFileName != null) {
 					out.println("<a href=\"data/" + AlChitsFileName + "\">" + AlChitsFileName + "</a>&nbsp;(Please click to download.)");
 				}
-				out.println("</td></tr><tr><td></td></tr><tr><td><div><iframe src=\"https://docs.google.com/presentation/d/e/2PACX-1vQmC6JTtpkF1x_Hq60rJTDQlMZbD4PKAMAuzQKA_WJF388rCZxtupf25oj3PQPGHCqlPX1DIS-alkJO/embed?start=true&loop=true&delayms=3000\" frameborder=\"0\" width=\"480\" height=\"299\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe></div></td></tr></table>");
+				out.println("</td></tr><tr><td></td></tr><tr><td><div><iframe id=\"wrapper \" src=\"https://docs.google.com/presentation/d/e/2PACX-1vQmC6JTtpkF1x_Hq60rJTDQlMZbD4PKAMAuzQKA_WJF388rCZxtupf25oj3PQPGHCqlPX1DIS-alkJO/embed?start=true&loop=true&delayms=3000\" frameborder=\"0\" width=\"400\" height=\"299\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe></div></td></tr></table>");
 				//out.println("<script src=\"js/download.js\"></script>");
 
 			}
