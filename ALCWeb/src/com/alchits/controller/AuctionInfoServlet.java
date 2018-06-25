@@ -50,7 +50,7 @@ public class AuctionInfoServlet extends HttpServlet {
 				out.println("<table><tr><td>");
 				if (AlChitsFileName != null) {
 					out.println("<a href=\"data/" + AlChitsFileName + "\">" + AlChitsFileName + "</a>&nbsp;(Please click to download.)");
-				}
+				} 
 
 				out.println("</td></tr><tr><td></td></tr><tr><td><div><iframe id=\"wrapper \" src=\"https://docs.google.com/presentation/d/e/2PACX-1vQmC6JTtpkF1x_Hq60rJTDQlMZbD4PKAMAuzQKA_WJF388rCZxtupf25oj3PQPGHCqlPX1DIS-alkJO/embed?start=true&loop=true&delayms=3000\" frameborder=\"0\" width=\"400\" height=\"250\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe></div></td></tr></table>");
 
