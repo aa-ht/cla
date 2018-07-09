@@ -27,8 +27,6 @@ import org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory;
 import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
 import org.apache.tomcat.util.http.fileupload.servlet.ServletRequestContext;
 
-
-
 /**
  * Servlet implementation class UploadFileServlet
  */
@@ -36,13 +34,14 @@ import org.apache.tomcat.util.http.fileupload.servlet.ServletRequestContext;
 public class UploadFileServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private ServletFileUpload uploader = null;
+
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
 	public UploadFileServlet() {
 		super();
 		// TODO Auto-generated constructor stub
-	}	
+	}
 
 	@Override
 	public void init() throws ServletException {
@@ -58,8 +57,7 @@ public class UploadFileServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-	
-	
+
 	}
 
 	/**
@@ -81,25 +79,27 @@ public class UploadFileServlet extends HttpServlet {
 			Iterator<FileItem> fileItemsIterator = fileItemsList.iterator();
 			while (fileItemsIterator.hasNext()) {
 				FileItem fileItem = fileItemsIterator.next();
-				//out.println("FieldName=" + fileItem.getFieldName());
-				//out.println("FileName=" + fileItem.getName());
-				//out.println("ContentType=" + fileItem.getContentType());
-				//out.println("Size in bytes=" + fileItem.getSize());
+				// out.println("FieldName=" + fileItem.getFieldName());
+				// out.println("FileName=" + fileItem.getName());
+				// out.println("ContentType=" + fileItem.getContentType());
+				// out.println("Size in bytes=" + fileItem.getSize());
 
 				File file = new File(
 						request.getServletContext().getAttribute("FILES_DIR") + File.separator + fileItem.getName());
 				out.println("Absolute Path at server=" + file.getAbsolutePath());
 				fileItem.write(file);
 				out.write("File " + fileItem.getName() + " uploaded successfully.");
-				
+
 				List<String> lines = Arrays.asList(fileItem.getName());
-				Path filePath = Paths.get(request.getServletContext().getAttribute("FILES_DIR") + File.separator +"filenames.txt");
+				Path filePath = Paths
+						.get(request.getServletContext().getAttribute("FILES_DIR") + File.separator + "filenames.txt");
 				Files.write(filePath, lines, Charset.forName("UTF-8"));
-		
-				getServletContext().setAttribute("ALChitsFileName",fileItem.getName() );
-				//out.write("<br>");
-				//out.write("<a href=\"UploadDownloadFileServlet?fileName=" + fileItem.getName() + "\">Download "
-				//		+ fileItem.getName() + "</a>");
+
+				getServletContext().setAttribute("ALChitsFileName", fileItem.getName());
+				// out.write("<br>");
+				// out.write("<a href=\"UploadDownloadFileServlet?fileName=" +
+				// fileItem.getName() + "\">Download "
+				// + fileItem.getName() + "</a>");
 			}
 		} catch (FileUploadException e) {
 			out.write("Exception in uploading file.");
