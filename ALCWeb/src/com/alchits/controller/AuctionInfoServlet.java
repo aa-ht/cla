@@ -45,7 +45,7 @@ public class AuctionInfoServlet extends HttpServlet {
 		String password = request.getParameter("pwd");
 
 		if (password != null) {
-			if (password.equals("alc41021080#")) {
+			if (password.equals("alc123")) {
 				String AlChitsFileName = (String) getServletContext().getAttribute("ALChitsFileName");
 				out.println("<table><tr><td>");
 				if (AlChitsFileName != null) {
